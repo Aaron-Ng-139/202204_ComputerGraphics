@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <!-- CSI 4130 Assignment 1
+    Aaron Ng
+    March 7, 2022
+    Code from ColouredTetra_Sol.html> -->
+<html
+ lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSI4130 Laboratory 4</title>
+    <style>
+        body {
+            /* set margin to 0 and overflow to hidden, to go fullscreen */
+            /* margin: 0; */
+            overflow: hidden;
+			background-color: #175d7e;
+			color: #cccccc;
+        }
+		a:link {
+			color: #33ccff;
+		}	
+		a:visited {
+			color: hsl(180, 100%, 90%);
+		}
+    </style>
+</head>
+  <body onload="main()">
+    <h1>Initials</h1>
+	<P>
+	This demo uses a VAO and webGL 2
+	</P>
+    <canvas id="webgl" width="512" height="512">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <hr width="100%">     
+    <table>
+      <tbody>
+	<tr>
+	  <td>
+	    Use up/down arrows to change speed.
+	  </td>
+	  <td>
+	    <button type="button" onclick="setDefault()">reset</button>
+	  </td>
+	</tr>
+	<tr>
+	  <td style="text-align:right">
+	    <button type="button" onclick="faster()">faster</button>
+	  </td>
+	  <td>
+	    <button type="button" onclick="slower()">slower</button>
+	  </td>
+	</tr>	
+      </tbody>
+    </table>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+	<script src="../node_modules/gl-matrix/gl-matrix.js"></script>
+    <script src="initials.js"></script>
+</P>
+<P>
+  <hr width="100%"> 
+</br>
+&copy; <a href="https://www.site.uottawa.ca/~jlang/">Jochen Lang</a> 
+</body>
+</html>
+</P>
+  </body>
+</html>
